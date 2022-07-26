@@ -1,1 +1,1 @@
-gunicorn mysite.wsgi --log-file
+gunicorn config.wsgi --log-file
