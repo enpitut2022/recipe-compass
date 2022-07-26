@@ -10,4 +10,4 @@ sqlparse==0.4.2; python_version >= "3.8" \
 tzdata==2022.1; sys_platform == "win32" and python_version >= "3.8" \
     --hash=sha256:238e70234214138ed7b4e8a0fab0e5e13872edab3be586ab8198c407620e2ab9 \
     --hash=sha256:8b536a8ec63dc0751342b3984193a3118f8fca2afe25752bb9b7fffd398552d3
-django-environ==0.9.0
+django-environ
