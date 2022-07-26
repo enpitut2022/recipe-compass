@@ -1,1 +1,1 @@
-gunicorn hoge.wsgi --log-file
+gunicorn recipe-compass.wsgi --log-file
