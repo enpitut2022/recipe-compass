@@ -29,7 +29,12 @@ if not os.getenv('HEROKU_ENV'):
 SECRET_KEY=env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 ALLOWED_HOSTS = ['127.0.0.1', 'recipe-compass.herokuapp.com']
 
