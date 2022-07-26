@@ -23,6 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 env = environ.Env()
+
 if not os.getenv('HEROKU_ENV'):
     env.read_env('.env')
 SECRET_KEY=env("SECRET_KEY")
