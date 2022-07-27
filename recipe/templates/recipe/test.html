@@ -23,27 +23,18 @@
             <input class="btn btn-danger" type="submit" name="submit" value="検索">
         </form>
 
-
         <div class="container">
             <div class="row">
+                {% for recipe in recipes %}
               <div class="col">
-                <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">
-                <img src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル" width="200" height="200"><br>
-                <h3>鶏ときのこの香ばしステーキ</h3></a><br>
-                <a class="badge bg-secondary">しめじ </a><a class="badge bg-secondary">エリンギ</a><a class="badge bg-secondary">鳥 もも肉</a><a class="badge bg-secondary">サニーレタス</a> 
+                <a href="{{recipe.url}}">
+                <img src="{{recipe.thumbnail_url}}" alt="料理サムネイル" width="200" height="200"><br>
+                <h3>{{recipe.title}}</h3></a><br>
+                    {% for tag in recipe.tags %}
+                    <a class="badge bg-secondary">{{tag}}</a>
+                    {% endfor %}
               </div>
-              <div class="col">
-                <a href="https://daidokolog.pal-system.co.jp/recipe/6994">
-                <img src="https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg" alt="料理サムネイル" width="200" height="200">
-                <h3>あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]</h3></a><br>
-                <a class="badge bg-secondary">ねぎ</a><a class="badge bg-secondary">みず菜</a><a class="badge bg-secondary">あじの三枚おろし</a>
-              </div>
-              <div class="col">
-                <a href="https://daidokolog.pal-system.co.jp/recipe/6994">
-                <img src="https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg" alt="料理サムネイル" width="200" height="200">
-                <h3>あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]</h3></a>
-                <a class="badge bg-secondary">ねぎ</a><a class="badge bg-secondary">みず菜</a><a class="badge bg-secondary">あじの三枚おろし</a>
-              </div>
+              {% endfor %}
             </div>
         </div>
             
