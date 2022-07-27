@@ -2,26 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>レシピコンパス</title>
     </head>
     <body>
-        <h1>れしぴコンパス</h1>
+        <h1 class="p-3 mb-2 bg-danger text-white">れしぴコンパス</h1>
 
         <form action="" method="get">
-            <input type="search" name="search" placeholder="料理名や材料名を入力">
-            <input type="search" name="not-search" placeholder="使わない材料名を入力">
-            <input type="submit" name="submit" value="検索">
+            
+            <div class="row">
+                <div class="col-xs-2">
+                    <input class="form-control" type="search" name="search" placeholder="料理名や材料名を入力">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <input class="form-control" type="search" name="not-search" placeholder="使わない材料名を入力">
+                </div>
+            </div>
+            <input class="btn btn-danger" type="submit" name="submit" value="検索">
         </form>
 
-        <div>
-            <img src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル" width="200" height="200">
-            <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">鶏ときのこの香ばしステーキ</a>
-            <a>しめじ </a><a>エリンギ</aa<a>鳥もも肉</a><a>サニーレタス</a>>a</a>>>a></a>a></a>
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">
+                <img src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル" width="200" height="200"><br>
+                <h3>鶏ときのこの香ばしステーキ</h3></a><br>
+                <a class="badge bg-secondary">しめじ </a><a class="badge bg-secondary">エリンギ</a><a class="badge bg-secondary">鳥 もも肉</a><a class="badge bg-secondary">サニーレタス</a> 
+              </div>
+              <div class="col">
+                <a href="https://daidokolog.pal-system.co.jp/recipe/6994">
+                <img src="https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg" alt="料理サムネイル" width="200" height="200">
+                <h3>あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]</h3></a><br>
+                <a class="badge bg-secondary">ねぎ</a><a class="badge bg-secondary">みず菜</a><a class="badge bg-secondary">あじの三枚おろし</a>
+              </div>
+              <div class="col">
+                <a href="https://daidokolog.pal-system.co.jp/recipe/6994">
+                <img src="https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg" alt="料理サムネイル" width="200" height="200">
+                <h3>あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]</h3></a>
+                <a class="badge bg-secondary">ねぎ</a><a class="badge bg-secondary">みず菜</a><a class="badge bg-secondary">あじの三枚おろし</a>
+              </div>
+            </div>
         </div>
-        <div>
-            <img src="https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg" alt="料理サムネイル" width="200" height="200">
-            <a href="https://daidokolog.pal-system.co.jp/recipe/6994">あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]</a>
-            <a>ねぎ</a><a>みず菜</a><a>あじの三枚おろし</a>>a</a>a></a>>a</a>
-        </div>
+            
     </body>
 </html>

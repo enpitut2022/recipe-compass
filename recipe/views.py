@@ -21,3 +21,6 @@ def view_json(request):
 
 def template(request):
     return render(request, 'recipe/test.html')
+
+def card(request):
+    return render(request, 'recipe/card.html')
