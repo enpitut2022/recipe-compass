@@ -18,3 +18,9 @@ def view_json(request):
     json_open = open('../fixtures/recipes.json', 'r')
     recipes = json.load(json_open)
     return render(request, 'view_json.html', {'recipes': recipes})
+
+def template(request):
+    return render(request, 'recipe/test.html')
+
+def card(request):
+    return render(request, 'recipe/card.html')
