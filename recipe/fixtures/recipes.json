@@ -1,137 +1,15 @@
 [
     {
-        "model": "recipe.Recipes",
-        "pk": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-        "fields": {
-            "title": "鶏ときのこの香ばしステーキ",
-            "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html",
-            "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg"
-        }
+        "title": "鶏ときのこの香ばしステーキ",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg",
+        "tags":["しめじ", "エリンギ", "鶏もも肉", "サニーレタス"]
     },
     {
-        "model": "recipe.Tags",
-        "pk": "9771be61-0850-46ee-a40e-e7706cfc66c3",
-        "fields": {
-            "name": "しめじ",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "753a7838-b347-4559-98c3-dd7324f2d4f9",
-        "fields": {
-            "name": "エリンギ",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "7cb06126-e83c-4f51-a687-e89ad3801e62",
-        "fields": {
-            "name": "鶏もも肉",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "d8246f6d-c76c-44e9-bee2-f3ced515c9dd",
-        "fields": {
-            "name": "サニーレタス",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "b465b5e9-ad30-404c-8f0a-d8ab28ac1e3f",
-        "fields": {
-            "name": "塩",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 2
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "8fd54948-f63e-4389-8baa-5b39879808ac",
-        "fields": {
-            "name": "サラダ油",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 2
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "541e8335-a3b3-406c-b408-61e07f9238ff",
-        "fields": {
-            "name": "キッコーマンいつでも新鮮しぼりたて生しょうゆ",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 2
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "163f4f29-7b8c-4379-9c44-b9d03c6a75f1",
-        "fields": {
-            "name": "みりん",
-            "recipes_id": "f7659b24-e56f-419f-8c26-b14ae9938c69",
-            "material_type": 2
-        }
-    },
-    {
-        "model": "recipe.Recipes",
-        "pk": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-        "fields": {
-            "title": "あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]",
-            "url": "https://daidokolog.pal-system.co.jp/recipe/6994",
-            "thumbnail_url": "https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg"
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "f9007375-c013-4d67-a9ae-4c2c4a63d860",
-        "fields": {
-            "name": "あじの三枚おろし",
-            "recipes_id": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "0626b03c-759c-4a27-8f0f-a46a07c304e6",
-        "fields": {
-            "name": "ねぎ",
-            "recipes_id": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "01713b09-8a25-4dc0-bfe6-432252b432b6",
-        "fields": {
-            "name": "みず菜",
-            "recipes_id": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-            "material_type": 1
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "33f6586a-3847-4e08-9de9-6c657d92c2e0",
-        "fields": {
-            "name": "片栗粉",
-            "recipes_id": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-            "material_type": 2
-        }
-    },
-    {
-        "model": "recipe.Tags",
-        "pk": "da4105ad-a50d-47d5-9565-cdf9c67ad614",
-        "fields": {
-            "name": "おろししょうが",
-            "recipes_id": "51009d7d-a5ef-4ba1-843f-2597c6604545",
-            "material_type": 2
-        }
-    }
+        "title": "あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]",
+        "url": "https://daidokolog.pal-system.co.jp/recipe/6994",
+        "thumbnail_url": "https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg",
+        "tags":["ねぎ", "水菜", "あじ"]
+    }    
+    
 ]
