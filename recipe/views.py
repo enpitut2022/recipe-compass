@@ -21,7 +21,6 @@ def template(request):
         recipe['thumbnail_url'] = Recipes.objects.filter(id=uuid).first().thumbnail_url
         tag = []
         for i in Tags.objects.filter(recipes_id=uuid).all():
-            #print(i)
             tag.append(i.name)
         recipe['tags'] = tag
         recipes.append(recipe)
