@@ -10,5 +10,7 @@ def index(request):
     return render(request, 'recipe/test.html', {'recipes': recipes})
 
 def template(request):
-    return render(request, 'recipe/card.html')
+    json_open = open('./recipe/fixtures/recipes.json', 'r')
+    recipes = json.load(json_open)
+    return render(request, 'recipe/card.html', {'recipes': recipes})
 
