@@ -27,48 +27,21 @@
 
         <div class="container">
             <div class="row">
-                <div class="col col-12 col-xl-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル">
-                        <div class="card-body">
-                            <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">
-                                <h3 class="card-title">鶏ときのこの香ばしステーキ</h3>
-                            </a><br>
-                            <a class="badge bg-secondary me-1">しめじ </a>
-                            <a class="badge bg-secondary me-1">エリンギ</a>
-                            <a class="badge bg-secondary me-1">鳥もも肉</a>
-                            <a class="badge bg-secondary me-1">サニーレタス</a> 
+                {% for recipe in recipes %}
+                    <div class="col col-12 col-xl-4">
+                        <div class="card">
+                            <img class="card-img-top" src="{{recipe.thumbnail_url}}" alt="料理サムネイル">
+                            <div class="card-body">
+                                <a href="{{recipe.url}}">
+                                    <h3 class="card-title">{{recipe.title}}</h3>
+                                </a><br>
+                                {% for tag in recipe.tags %}
+                                    <a class="badge bg-secondary me-1">{{tag}}</a>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-12 col-xl-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル">
-                        <div class="card-body">
-                            <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">
-                                <h3 class="card-title">鶏ときのこの香ばしステーキ</h3>
-                            </a><br>
-                            <a class="badge bg-secondary me-1">しめじ </a>
-                            <a class="badge bg-secondary me-1">エリンギ</a>
-                            <a class="badge bg-secondary me-1">鳥もも肉</a>
-                            <a class="badge bg-secondary me-1">サニーレタス</a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-xl-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://www.kikkoman.co.jp/homecook/search/recipe/img/00006616.jpg" alt="料理サムネイル">
-                        <div class="card-body">
-                            <a href="https://www.kikkoman.co.jp/homecook/search/recipe/00006616/index.html">
-                                <h3 class="card-title">鶏ときのこの香ばしステーキ</h3>
-                            </a><br>
-                            <a class="badge bg-secondary me-1">しめじ </a>
-                            <a class="badge bg-secondary me-1">エリンギ</a>
-                            <a class="badge bg-secondary me-1">鳥もも肉</a>
-                            <a class="badge bg-secondary me-1">サニーレタス</a> 
-                        </div>
-                    </div>
-                </div>
+              {% endfor %}
             </div>
         </div>
     </body>
