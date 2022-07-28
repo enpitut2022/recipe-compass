@@ -6,10 +6,119 @@
         "tags":["しめじ", "エリンギ", "鶏もも肉", "サニーレタス"]
     },
     {
-        "title": "あじの油淋鶏風｜だいどこログ[生協パルシステムのレシピサイト]",
-        "url": "https://daidokolog.pal-system.co.jp/recipe/6994",
-        "thumbnail_url": "https://cont-daidokolog.pal-system.co.jp/system/recipe/6994/img/thumbnail/pc_detail_main_PS_KCP_1722M.jpg",
-        "tags":["ねぎ", "水菜", "あじ"]
-    }    
+        "title": "なすのホイルマヨ焼き",
+        "url": "https://park.ajinomoto.co.jp/recipe/card/800615/",
+        "thumbnail_url": "https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/800615.jpeg",
+        "tags":["なす", "しょうゆ", "ピザ用チーズ", "削り節"]
+    },
+    {
+        "title": "やみつき！無限きゅうり",
+        "url": "https://park.ajinomoto.co.jp/recipe/card/800317/",
+        "thumbnail_url": "https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/800317.jpeg",
+        "tags":["きゅうり", "ごま油", "丸鶏がらスープ"]
+    },
+    {
+        "title": "ちくわの磯辺揚げ",
+        "url": "https://park.ajinomoto.co.jp/recipe/card/701716/",
+        "thumbnail_url": "https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/701716.jpeg",
+        "tags":["ちくわ", "青のり"]
+    },
+    {
+        "title": "たまご雑炊",
+        "url": "https://park.ajinomoto.co.jp/recipe/card/708304/",
+        "thumbnail_url": "https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/708304-300x200.jpeg",
+        "tags":["ご飯", "卵", "小ねぎ"]
+    },
+    {
+        "title": "ゴーヤそうめんチャンプルー",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00001026/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00001026.jpg",
+        "tags":["そうめん", "にがうり", "ゴーヤ", "卵", "ポークランチョンミート", "塩", "こしょう", "しょうゆ", "鰹節"]
+    }  ,
+
+    {
+        "title": "豚なすピーマンの甘辛みそ炒め",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00052094/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00052094.jpg",
+        "tags":["なす", "豚こま肉", "ピーマン", "おろしにんにく"]
+    },
+    {
+        "title": "豚ときゅうりの香味炒め",
+        "url": "https://www.orangepage.net/recipes/detail_300098",
+        "thumbnail_url": "https://production-orp.s3.amazonaws.com/uploads/recipes/image/0000300098/20140709111512_w300hf.jpg",
+        "tags": ["豚バラ肉", "きゅうり"]
+    },
+    {
+        "title": "回鍋肉",
+        "url": "https://www.orangepage.net/recipes/detail_126451",
+        "thumbnail_url": "https://production-orp.s3.amazonaws.com/uploads/recipes/image/0000126451/20140623173359_w300hf.jpg",
+        "tags": ["豚バラ肉", "キャベツ", "にんにく"]
+    },
+    {
+        "title": "鶏肉のトマトソース煮",
+        "url": "https://www.orangepage.net/recipes/detail_120219",
+        "thumbnail_url": "https://production-orp.s3.amazonaws.com/uploads/recipes/image/0000120219/20131003142238_w300hf.jpg",
+        "tags": ["鶏もも肉", "玉ねぎ"]
+    },
+    {
+        "title": "プーパッポンカリー",
+        "url": "https://www.orangepage.net/recipes/detail_301812",
+        "thumbnail_url": "https://production-orp.s3.amazonaws.com/uploads/recipes/image/0000301812/20190625164025_w300hf.jpg",
+        "tags": ["かにかま", "ピーマン", "玉ねぎ"]
+    }, 
+    {
+        "title": "ポークカレー",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00003600/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00003600.jpg",
+        "tags":["豚肉", "玉ねぎ", "にんじん", "カレー粉"]
+    }, 
+    {
+        "title": "鶏じゃが",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00001929/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00001929.jpg",
+        "tags":["鶏もも肉", "じゃがいも", "玉ねぎ"]
+    }, 
+    {
+        "title": "里芋ときのこの炊き込みご飯",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00003812/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00003812.jpg",
+        "tags":["米", "里芋", "まいたけ"]
+    }, 
+    {
+        "title": "クレソンとベーコンのパスタ",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00007331/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00007331.jpg",
+        "tags":["スパゲッティ", "クレソン", "玉ねぎ", "ベーコン", "にんにく"]
+    }, 
+    {
+        "title": "焼ききつねうどん",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00002416/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00002146.jpg",
+        "tags":["うどん", "油揚げ", "小松菜"]
+    }, 
+    {
+        "title": "基本の鶏のから揚げ【人気の定番・もも肉やわらか】",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00004001/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00004001.jpg",
+        "tags":["鶏もも肉"]
+    },
+    {
+        "title": "ゴーヤとあじのマリネ",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00006917/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00006917.jpg",
+        "tags":["あじ", "玉ねぎ", "にがうり", "パクチー", "レモン"]
+    }, 
+    {
+        "title": "レンジで簡単！香味ねぎだれチキン丼",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00050903/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00050903.jpg",
+        "tags":["鶏もも肉", "貝割れ菜", "カット野菜", "ご飯"]
+    }, 
+    {
+        "title": "レンジで簡単！にんにく味噌のやみつき手羽先",
+        "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00050747/index.html",
+        "thumbnail_url": "https://www.kikkoman.co.jp/homecook/search/recipe/img/00050747.jpg",
+        "tags":["キャベツ", "鶏手羽先"]
+    }
     
 ]
