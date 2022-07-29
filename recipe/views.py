@@ -33,6 +33,7 @@ def result(request):
     recipes = []
     for data in Tags.objects.filter(name=query).all():
         recipe = dict()
+        
         uuid = str(data.recipes_id).replace('-', '').split('(')[1].split(')')[0]
         #print('\n\n\n\n');print(uuid);print('\n\n\n\n')
         recipe['title'] = Recipes.objects.filter(id=uuid).first().title
