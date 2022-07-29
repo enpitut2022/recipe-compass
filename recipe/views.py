@@ -26,27 +26,42 @@ def template(request):
         recipes.append(recipe)
     return render(request, 'recipe/card.html', {'recipes': recipes})
 
+
 # GETで送られた値の受け取り
 def result(request):
-    query = request.GET.get("search")
+    queries = request.GET.get("search")
     query_not = request.GET.get("not-search")
     recipes = []
-    for data in Tags.objects.filter(name=query).all():
-        recipe = dict()
-        
-        uuid = str(data.recipes_id).replace('-', '').split('(')[1].split(')')[0]
+    recipes_num = {}
+    queries_list = queries.split()
+    for query in queries_list:
+        for data in Tags.objects.filter(name=query).all():
+            uuid = str(data.recipes_id).replace('-', '').split('(')[1].split(')')[0]
+            if uuid in list(recipes_num.keys()):
+            #if uuid in recipes_num:
+                recipes_num[uuid] = recipes_num[uuid] + 1
+            else:
+                recipes_num[uuid] = 1
+
+    for key, value in recipes_num.items():
+        if value == len(queries_list):
+            recipe = dict()
+            recipe['title'] = Recipes.objects.filter(id=key).first().title
+            #print(recipe['title'])
+            recipe['url'] = Recipes.objects.filter(id=key).first().url
+            recipe['thumbnail_url'] = Recipes.objects.filter(id=key).first().thumbnail_url
+            tag = []
+            for i in Tags.objects.filter(recipes_id=key).all():
+                tag.append(i.name)
+            recipe['tags'] = tag
+            recipes.append(recipe)
+    
+    #for data in Tags.objects.filter(name__in=query).all():
+        #uuid = str(data.recipes_id).replace('-', '').split('(')[1].split(')')[0]
         #print('\n\n\n\n');print(uuid);print('\n\n\n\n')
-        recipe['title'] = Recipes.objects.filter(id=uuid).first().title
-        #print(recipe['title'])
-        recipe['url'] = Recipes.objects.filter(id=uuid).first().url
-        recipe['thumbnail_url'] = Recipes.objects.filter(id=uuid).first().thumbnail_url
-        tag = []
-        for i in Tags.objects.filter(recipes_id=uuid).all():
-            tag.append(i.name)
-        recipe['tags'] = tag
-        recipes.append(recipe)
+
     #print(recipes)
-    return render(request, 'recipe/result/result-sample.html', {'recipes': recipes, 'query': query, 'query_not': query_not})
+    return render(request, 'recipe/result/result-sample.html', {'recipes': recipes, 'query': queries_list, 'query_not': query_not})
 
 def result_sample(request):
     json_open = open('./recipe/fixtures/recipes.json', 'r', encoding="utf-8")
