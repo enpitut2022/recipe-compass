@@ -26,6 +26,14 @@ def template(request):
         recipes.append(recipe)
     return render(request, 'recipe/card.html', {'recipes': recipes})
 
+# GETで送られた値の受け取り
+def result(request):
+    query = request.GET.get("search")
+    query_not = request.GET.get("not-search")
+    json_open = open('./recipe/fixtures/recipes.json', 'r', encoding="utf-8")
+    recipes = json.load(json_open)
+    return render(request, 'recipe/result/result-sample.html', {'recipes': recipes, 'query': query, 'query_not': query_not})
+
 def result_sample(request):
     json_open = open('./recipe/fixtures/recipes.json', 'r', encoding="utf-8")
     recipes = json.load(json_open)
