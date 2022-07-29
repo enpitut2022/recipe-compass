@@ -32,7 +32,7 @@
                         <div class="card">
                             <img class="card-img-top" src="{{recipe.thumbnail_url}}" alt="料理サムネイル">
                             <div class="card-body">
-                                <a href="{{recipe.url}}">
+                                <a href="{{recipe.url}}" target="_blank" rel="noopener noreferrer">
                                     <h3 class="card-title">{{recipe.title}}</h3>
                                 </a><br>
                                 {% for tag in recipe.tags %}
