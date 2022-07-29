@@ -28,8 +28,6 @@
         <div class="container">
             <div class="row">
                 {% for recipe in recipes %}
-                    {% if "鶏もも肉" in recipe.tags %}
-
                     <div class="col col-12 col-xl-4">
                         <div class="card">
                             <img class="card-img-top" src="{{recipe.thumbnail_url}}" alt="料理サムネイル">
@@ -43,7 +41,6 @@
                             </div>
                         </div>
                     </div>
-                    {% endif %}
               {% endfor %}
             </div>
         </div>

@@ -30,8 +30,18 @@ def template(request):
 def result(request):
     query = request.GET.get("search")
     query_not = request.GET.get("not-search")
-    json_open = open('./recipe/fixtures/recipes.json', 'r', encoding="utf-8")
-    recipes = json.load(json_open)
+    recipes = []
+    for data in Tags.objects.filter(name=query).all():
+        recipe = dict()
+        uuid = str(data.recipes_id).replace('-', '')
+        recipe['title'] = Recipes.objects.filter(id=uuid).first().title
+        recipe['url'] = Recipes.objects.filter(id=uuid).first().url
+        recipe['thumbnail_url'] = Recipes.objects.filter(id=uuid).first().thumbnail_url
+        tag = []
+        for i in Tags.objects.filter(recipes_id=uuid).all():
+            tag.append(i.name)
+        recipe['tags'] = tag
+        recipes.append(recipe)
     return render(request, 'recipe/result/result-sample.html', {'recipes': recipes, 'query': query, 'query_not': query_not})
 
 def result_sample(request):
