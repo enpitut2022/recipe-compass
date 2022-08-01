@@ -14,4 +14,4 @@
     - 武本慎ノ介
 
 * Miro: https://miro.com/app/board/uXjVOnFXFd4=/
-* App: https://recipe-compass.herokuapp.com/recipe/
+* App: https://recipe-compass.herokuapp.com/
